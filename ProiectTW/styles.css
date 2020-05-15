@@ -199,6 +199,91 @@ tr:nth-child(even) {
  
 }
 
+
+.btn-grid{
+  display: grid;
+  grid-template-columns: repeat(2,auto);
+  gap:10px;
+  margin: 20px 0;
+}
+
+.btn {
+  
+  
+  background-color: rgb(72, 143, 236);
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: white;
+  outline: none;
+}
+
+.btn:hover {
+  border-color: black;
+}
+
+.btn.correct {
+  background-color:green;
+  color: black;
+}
+
+.btn.wrong {
+  background-color:red;
+}
+
+.start-btn, .next-btn {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin: 20px;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hide {
+  display: none;
+}
+.collapsible-btn{
+  background-color: rgb(72, 143, 236);
+  color: white;
+  cursor: pointer;
+  padding: 2px 20px;
+  margin-bottom: 10px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 12px;
+  border-radius: 3px;
+}
+.active, .collapsible-btn:hover {
+  background-color: #555;
+}
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+input[type=text] {
+  width: 50%;
+  padding: 5px 15px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+input[type="checkbox"]{
+  width: 23px;
+  height: 23px;
+  padding: 0;
+  margin:0;
+  vertical-align: center;
+  position: relative;
+  top: 7px;
+}
+
 ::-webkit-scrollbar {
   width: 7px;
 }

@@ -1,0 +1,114 @@
+{
+    "quiz": [
+        {
+            "id": "09a9b018-46d3-4c2d-b75c-150aec5178fa",
+            "question": "Cate planete sunt in sistemul nostru solar?",
+            "answers": [
+                {
+                    "text": "7",
+                    "correct": false
+                },
+                {
+                    "text": "8",
+                    "correct": true
+                },
+                {
+                    "text": "10",
+                    "correct": false
+                },
+                {
+                    "text": "9",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "id": "5dd8e7a2-57b2-4d36-99a8-a64665f32e03",
+            "question": "Care este cea mai mare planeta din sistemul nostru solar?",
+            "answers": [
+                {
+                    "text": "Jupiter",
+                    "correct": true
+                },
+                {
+                    "text": "Uranus",
+                    "correct": false
+                },
+                {
+                    "text": "Neptun",
+                    "correct": false
+                },
+                {
+                    "text": "Saturn",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "id": "089c870b-f679-4e51-8c28-92bbebddd921",
+            "question": "Care este cea mai indepartata planeta de Soare?",
+            "answers": [
+                {
+                    "text": "Mercur",
+                    "correct": false
+                },
+                {
+                    "text": "Pluto",
+                    "correct": false
+                },
+                {
+                    "text": "Neptun",
+                    "correct": true
+                },
+                {
+                    "text": "Jupiter",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "id": "0166541b-fa75-49ae-8106-17933f8fe252",
+            "question": "Cea mai apropiata planeta de Soare",
+            "answers": [
+                {
+                    "text": "Marte",
+                    "correct": false
+                },
+                {
+                    "text": "Venus",
+                    "correct": false
+                },
+                {
+                    "text": "Pluto",
+                    "correct": false
+                },
+                {
+                    "text": "Mercur",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "id": "2fed0498-0f28-433a-8833-4163d4d7866e",
+            "question": "Sistemul Solar se afla in galaxia:",
+            "answers": [
+                {
+                    "text": "Andromeda",
+                    "correct": false
+                },
+                {
+                    "text": "Calea Lactee",
+                    "correct": true
+                },
+                {
+                    "text": "IC 10",
+                    "correct": false
+                },
+                {
+                    "text": "Comet",
+                    "correct": false
+                }
+            ]
+        }
+    ]
+}

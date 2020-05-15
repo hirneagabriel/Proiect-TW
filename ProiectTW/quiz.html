@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <head>
+        <title>Quiz Time</title>
+        <link rel="stylesheet" href="styles.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Abel%7CCairo%7COverpass%7CRubik%7CSource+Serif+Pro&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Sarabun&display=swap" rel="stylesheet">
+      </head>
+<body>
+    <div class="header">
+        <h1>Sistemul Solar</h1>
+        <h2>Quiz Time</h2>
+      </div>
+      <nav class="navbar">
+        <a href="home.html">Acasa</a>
+        <div class="drop">
+          <button class="dropbutton">Corpuri ceresti</button>
+          <div class="drop-content">
+            <a href="soare.html">Soare</a>
+            <a href="planeteinter.html">Planete interioare</a>
+            <a href="planeteex.html">Planete exterioare</a>
+          </div>
+        </div>
+        <a href="quiz.html">Quiz time</a>
+        <a href="Contact.html" class="right">Contact</a>
+      </nav>
+    <div class="grup">
+      
+      <div class="box">
+        <div id="question-container" class="hide">
+          <div id="question">Question</div>
+          <div id="answer-buttons" class="btn-grid">
+            <button class="btn">Answer 1</button>
+            <button class="btn">Answer 2</button>
+            <button class="btn">Answer 3</button>
+            <button class="btn">Answer 4</button>
+          </div>
+        </div>
+          <div class="controls">
+            <button id="start-btn" class="start-btn btn">Start</button>
+            <button id="next-btn" class="next-btn btn hide">Next</button>
+          </div>
+
+          <button class="collapsible-btn">Vrei sa ne ajuti?</button>
+          <div class="content">
+            <div>
+              <p>Se vor bifa raspunsurile corecte.</p>
+              <p>Introdu o noua intrebare:</p>
+             <label>
+                <strong>Intrebare</strong>
+                  <input type="text" id="input-question">
+            </label>
+            <br>
+            <label><strong>Raspuns 1</strong>
+              <input type="text" class="input-answers">
+              <input type="checkbox" class="answer-true" value="true">
+            </label>
+            <br>
+            <label><strong >Raspuns 2</strong>
+              <input type="text" class="input-answers">
+              <input type="checkbox" class="answer-true" value="true">
+            </label>
+            <br>
+            <label><strong >Raspuns 3</strong>
+              <input type="text" class="input-answers">
+              <input type="checkbox" class="answer-true" value="true">
+            </label>
+            <br>
+            <label><strong >Raspuns 4</strong>
+              <input type="text" class="input-answers">
+              <input type="checkbox" class="answer-true" value="true">
+            </label>
+            <br>
+  
+              <button class="btn" onclick="addQuestion()">Introduce Intrebarea</button>
+          </div>
+          
+  
+          <div>
+            <p>Daca stii id-ul unei intrebari o poti modifica!</p>
+             <label>
+               <strong>Id Intrebare</strong>
+              <input type="text" id="input-id">
+            </label> 
+            <br>
+              <label>
+                <strong >Intrebare noua</strong>
+                <input type="text" id="input-update-question">
+                
+              </label>
+              <br>
+              <label>
+                 <strong >Raspuns 1 nou</strong>
+                <input type="text" class="input-update-answers">
+                <input type="checkbox" class="answer-update-true" value="true">
+              </label>
+              <br>
+              <label>
+                <strong >Raspuns 2 nou</strong>
+               <input type="text" class="input-update-answers">
+               <input type="checkbox" class="answer-update-true" value="true">
+             </label>
+             <br>
+             <label>
+              <strong >Raspuns 3 nou</strong>
+             <input type="text" class="input-update-answers">
+             <input type="checkbox" class="answer-update-true" value="true">
+           </label>
+           <br>
+           <label>
+            <strong >Raspuns 4 nou</strong>
+           <input type="text" class="input-update-answers">
+           <input type="checkbox" class="answer-update-true" value="true">
+         </label>
+         <br>
+              <button class="btn" onclick="updateQuestion()">Update Intrebare</button>
+          </div>
+          <p>Poti sterge o intrebare dupa id!</p>
+          <label>
+            <strong>Id Intrebare</strong>
+           <input type="text" id="delete-id">
+         </label> 
+          </div>
+          
+      
+      
+    </div>
+  </div>
+      <div class="footer">
+        Source: https://ro.wikipedia.org
+      </div>
+      <script src="quiz.js"></script>
+    
+</body>
+
+
+</html>
