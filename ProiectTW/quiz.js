@@ -8,6 +8,7 @@ var deleteButton = document.createElement("button")
     deleteButton.appendChild(document.createTextNode("Delete question"))
     deleteButton.classList.add('btn')
 
+
 coll.addEventListener('click', () => {
    
     coll.classList.toggle('active')
@@ -21,6 +22,10 @@ coll.addEventListener('click', () => {
         deleteButton.addEventListener('click', deleteQuestion)
 
     }
+    var wordsInPage = wordCount(document.getElementsByTagName("body"))
+    var wCout=document.getElementsByClassName("cout")[0]
+        wordCount(wordsInPage)
+        wCount.innerHTML="Numar cuvinte pagina: "+ wordsInPage
 })
 
 
@@ -39,6 +44,7 @@ function getQuestions() {
             
             var questions = data
             startGame(questions)
+           
           
 
         })
@@ -150,6 +156,7 @@ function startGame(questions) {
     Questions = questions
     curentQuestionI = 0
     setNextQuestion()
+    
 }
 
 function setNextQuestion() {
@@ -157,6 +164,11 @@ function setNextQuestion() {
 
 
     showQuestion(Questions[curentQuestionI])
+    var wordsInPage = wordCount(document.getElementsByTagName("body"))
+    var wCout=document.getElementsByClassName("cout")[0]
+        wordCount(wordsInPage)
+        wCount.innerHTML="Numar cuvinte pagina: "+ wordsInPage
+
 }
 
 function showQuestion(question) {
@@ -170,6 +182,7 @@ function showQuestion(question) {
         }
         button.addEventListener('click', selectAnswer)
         answerButtonsElement.appendChild(button)
+        
 
     })
 }
@@ -210,4 +223,15 @@ function setStatusClass(element, correct) {
 function clearStatusClass(element) {
     element.classList.remove('correct')
     element.classList.remove('wrong')
+}
+
+
+
+function wordCount(words) {
+	var count = 0
+	for (var i = 0; i < words.length; i++) {
+		count += words[i].textContent.trim().split(/\s+/).length;
+
+	}
+	return count
 }

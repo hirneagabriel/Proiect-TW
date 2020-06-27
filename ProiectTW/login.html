@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <head>
+        <title>Login</title>
+        <link rel="stylesheet" href="styles.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Abel%7CCairo%7COverpass%7CRubik%7CSource+Serif+Pro&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Sarabun&display=swap" rel="stylesheet">
+      </head>
+<body>
+    <div class="header">
+        <h1>Sistemul Solar</h1>
+        <h2>Quiz Time</h2>
+      </div>
+      <nav class="navbar">
+        <a href="home.html">Acasa</a>
+        <div class="drop">
+          <button class="dropbutton">Corpuri ceresti</button>
+          <div class="drop-content">
+            <a href="soare.html">Soare</a>
+            <a href="planeteinter.html">Planete interioare</a>
+            <a href="planeteex.html">Planete exterioare</a>
+          </div>
+        </div>
+        <a href="quiz.html">Quiz time</a>
+        <a href="facts.html">Curious facts</a>
+        <a href="login.html" class="right">Login</a>
+      </nav>
+    <div class="grup">
+      
+      <div class="box">
+          <h3>Inregistrare</h3>
+        <form id="register-form"> 
+            <input id="name" type="text" placeholder="Username" value=""/>
+            <input id="pw" type="password" placeholder="Parola" value=""/>
+            <br/>
+            <input id="rgstr_btn" type="submit" value="Get Account" onClick="store()"/> 
+        </form>
+        
+        <h3>Autentificare</h3>
+        <form id="login-form"> 
+            <input id="userName" type="text" placeholder="Enter Username" value=""/>
+            <input id="userPw" type="password" placeholder="Enter Password" value=""/>
+            <br/>
+            <input id="login_btn" type="submit" value="Login" onClick="check()"/> 
+       </form>
+          </div>
+          
+      
+      
+    </div>
+  </div>
+      <div class="footer">
+        Source: https://ro.wikipedia.org
+      </div>
+      <script src="wordcounter.js"></script>
+      <script src="paginacurenta.js"></script>
+      <script src="login.js"></script>
+    
+</body>
+
+
+</html>
